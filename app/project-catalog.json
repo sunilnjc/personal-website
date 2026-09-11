@@ -1,32 +1,344 @@
 {
   "applications": [
-    {"id":"job-search-agent","title":"Job Search Agent","category":"AI & PRODUCTIVITY","status":"Working application","description":"A job-search assistant that collects employer listings, ranks eligible roles, prepares tailored application material, and tracks the application pipeline.","scope":"Submission assistance pauses for candidate confirmation and unsupported or ambiguous steps.","tags":["Python","React","AI workflows"],"repository":"https://github.com/sunilnjc/job-search-agent","source":"Public repository"},
-    {"id":"lucid","title":"Lucid Vocabulary Coach","category":"LEARNING","status":"Working application","description":"A mobile-first English-learning app with focused vocabulary lessons, usage exercises, spaced review, and regular quizzes.","scope":"Progress is stored in D1 with device caching for offline continuity.","tags":["TypeScript","React","Cloudflare D1"],"repository":"https://github.com/sunilnjc/Lucid","source":"Public repository"},
-    {"id":"product-studio","title":"UAE F&B Product Studio","category":"PRODUCT DEVELOPMENT","status":"Local application","description":"A guided workspace that takes a beverage brief through concept comparison, prototype formulation, costing, packaging, sourcing, branding, and exportable product dossiers.","scope":"Production hosting and frontend production authentication remain deferred.","tags":["TypeScript","MongoDB","AI workflows"],"repository":null,"source":"Private repository"},
-    {"id":"budget-tracker","title":"BudgetTracker","category":"PERSONAL FINANCE","status":"Working locally","description":"A budgeting and cash-flow application with expense tracking, payoff scenarios, savings forecasts, and data export.","scope":"Includes projection, actuals, scenario tools, and savings workflows. This showcase contains no personal financial records.","tags":["React","Express","MongoDB"],"repository":"https://github.com/sunilnjc/debt-tracker","source":"Public repository"},
-    {"id":"trader-cockpit","title":"Trader Risk Cockpit","category":"ANALYTICS","status":"Full-stack MVP","description":"Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights.","scope":"Includes a deterministic mock mode; live integration needs the application’s configuration.","tags":["TypeScript","React","Express"],"repository":"https://github.com/sunilnjc/trader-cockpit","source":"Public repository"},
-    {"id":"whisper-journal","title":"Whisper","category":"PERSONAL TOOLS","status":"Capture prototype","description":"A voice-journaling pipeline: receive a Telegram prompt, reply with a voice note, transcribe it locally, and keep the text in SQLite.","scope":"The initial capture version deletes transient audio. Search and analysis are later work.","tags":["Node.js","whisper.cpp","SQLite"],"repository":"https://github.com/sunilnjc/Whisper","source":"Public repository"},
-    {"id":"crypto-forge","title":"CryptoForge Lab","category":"WEB3","status":"Application in development","description":"A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics.","scope":"Wallet submissions depend on an explicit write configuration. This is a software project, not a claim of investment performance.","tags":["Next.js","TypeScript","viem"],"repository":null,"source":"Source not published"},
-    {"id":"bulls-2028","title":"BullsOf2028","category":"MARKET DATA","status":"Local V1","description":"A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages.","scope":"Production activation remains gated. Rankings are algorithmic, not investment recommendations.","tags":["Next.js","Cloudflare D1","TypeScript"],"repository":null,"source":"Private repository"},
-    {"id":"unified-swap","title":"Unified Crypto Swap","category":"WEB3","status":"Read-only prototype","description":"A purchase planner that compares potential funding sources and estimated costs using a demo portfolio or a bounded public-address scan.","scope":"Live scanning is bounded to canonical USDC on Base and Arbitrum. No wallet signing or transaction execution is implemented.","tags":["React","TypeScript","Cloudflare Workers"],"repository":null,"source":"Private repository"},
-    {"id":"unified-wallet","title":"Unified Wallet","category":"BROWSER EXTENSION","status":"Private local build","description":"An Ethereum/EVM browser wallet with encrypted recovery, account management, asset discovery, token transfers, dapp approvals, and reviewed swaps.","scope":"Local installation only. Independent security assessment is outstanding; it is not a publicly released wallet.","tags":["Browser extension","Ethereum","EVM"],"repository":null,"source":"Source not published"},
-    {"id":"camera-copilot","title":"AI Camera Copilot","category":"COMPUTER VISION","status":"Recorded-video prototype","description":"A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports.","scope":"Recorded-video phases 0–2 are documented as complete; live HDMI capture remains deferred.","tags":["Python","Computer vision","Local processing"],"repository":null,"source":"Source not published","featured":true},
-    {"id":"room-comfort","title":"Room Comfort Autopilot","category":"SENSOR SYSTEMS","status":"Local prototypes","description":"Two related implementations that turn replayable room-sensor data into quality-aware comfort labels, short forecasts, and explainable recommendations.","scope":"Observation and mock actuation only. It is not a certified safety or building-control system.","tags":["Python","Sensor data","Explainable rules"],"repository":null,"source":"Source not published"},
-    {"id":"worship-director","title":"AI Worship Production Director","category":"MEDIA PRODUCTION","status":"Local prototype","description":"An offline production assistant that observes recordings or exported OBS events and suggests camera or production choices with confidence and reasons.","scope":"Suggestions are reviewed by an operator. It does not switch scenes or control hardware.","tags":["Python","OpenCV","OBS replay"],"repository":null,"source":"Source not published"},
-    {"id":"stream-sentinel","title":"Live-Stream Failure Sentinel","category":"OBSERVABILITY","status":"Offline prototype","description":"An early-warning assistant that replays stream telemetry, groups likely failures, and creates incident timelines and redacted evidence for operators.","scope":"Includes offline replay and read-only probes. Continuous live monitoring remains disabled.","tags":["Python","Telemetry","Incident analysis"],"repository":null,"source":"Source not published"},
-    {"id":"account-ledger","title":"Account Ledger Core","category":"SYSTEMS & MODELLING","status":"Reference implementation","description":"A Java ledger with immutable journals, replayable account projections, authorization handling, daily close, and value-date versus knowledge-date queries.","scope":"An in-memory exercise; persistence, concurrency, and automatic hold expiry are outside its implemented scope.","tags":["Java 21","Event modelling","Ledger design"],"repository":"https://github.com/sunilnjc/in-memory-account-ledger","source":"Public repository","featured":true}
+    {
+      "id": "job-search-agent",
+      "title": "Job Search Agent",
+      "category": "AI & PRODUCTIVITY",
+      "status": "Working application",
+      "description": "A job-search assistant that collects employer listings, ranks eligible roles, prepares tailored application material, and tracks the application pipeline.",
+      "scope": "Submission assistance pauses for candidate confirmation and unsupported or ambiguous steps.",
+      "tags": [
+        "Python",
+        "React",
+        "AI workflows"
+      ],
+      "repository": "https://github.com/sunilnjc/job-search-agent",
+      "source": "Public repository",
+      "headline": "Find roles. Prepare applications.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "lucid",
+      "title": "Lucid Vocabulary Coach",
+      "category": "LEARNING",
+      "status": "Working application",
+      "description": "A mobile-first English-learning app with focused vocabulary lessons, usage exercises, spaced review, and regular quizzes.",
+      "scope": "Progress is stored in D1 with device caching for offline continuity.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Cloudflare D1"
+      ],
+      "repository": "https://github.com/sunilnjc/Lucid",
+      "source": "Public repository",
+      "headline": "Learn words. Put them to use.",
+      "appUrl": "https://lucid-vocabulary-sunil.sunilkumar-kalabandi.chatgpt.site",
+      "appAccess": "public"
+    },
+    {
+      "id": "product-studio",
+      "title": "UAE F&B Product Studio",
+      "category": "PRODUCT DEVELOPMENT",
+      "status": "Local application",
+      "description": "A guided workspace that takes a beverage brief through concept comparison, prototype formulation, costing, packaging, sourcing, branding, and exportable product dossiers.",
+      "scope": "The public app is an earlier hosted version. The local application includes further formulation, costing, sourcing, and dossier work.",
+      "tags": [
+        "TypeScript",
+        "MongoDB",
+        "AI workflows"
+      ],
+      "repository": null,
+      "source": "Private repository",
+      "headline": "Turn a product brief into a prototype.",
+      "appUrl": "https://uae-fnb-product-studio.sunilkumar-kalabandi.chatgpt.site",
+      "appAccess": "public"
+    },
+    {
+      "id": "budget-tracker",
+      "title": "BudgetTracker",
+      "category": "PERSONAL FINANCE",
+      "status": "Working locally",
+      "description": "A budgeting and cash-flow application with expense tracking, payoff scenarios, savings forecasts, and data export.",
+      "scope": "Includes projection, actuals, scenario tools, and savings workflows. This showcase contains no personal financial records.",
+      "tags": [
+        "React",
+        "Express",
+        "MongoDB"
+      ],
+      "repository": "https://github.com/sunilnjc/debt-tracker",
+      "source": "Public repository",
+      "headline": "See where the month\u2019s money goes.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "trader-cockpit",
+      "title": "Trader Risk Cockpit",
+      "category": "ANALYTICS",
+      "status": "Full-stack MVP",
+      "description": "Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights.",
+      "scope": "Includes a deterministic mock mode; live integration needs the application\u2019s configuration.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Express"
+      ],
+      "repository": "https://github.com/sunilnjc/trader-cockpit",
+      "source": "Public repository",
+      "headline": "Review trades after fees and funding.",
+      "appUrl": "https://trader-risk-cockpit.sunilkumar-kalabandi.chatgpt.site",
+      "appAccess": "private"
+    },
+    {
+      "id": "whisper-journal",
+      "title": "Whisper",
+      "category": "PERSONAL TOOLS",
+      "status": "Capture prototype",
+      "description": "A voice-journaling pipeline: receive a Telegram prompt, reply with a voice note, transcribe it locally, and keep the text in SQLite.",
+      "scope": "The initial capture version deletes transient audio. Search and analysis are later work.",
+      "tags": [
+        "Node.js",
+        "whisper.cpp",
+        "SQLite"
+      ],
+      "repository": "https://github.com/sunilnjc/Whisper",
+      "source": "Public repository",
+      "headline": "Record a thought. Keep the words.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "crypto-forge",
+      "title": "CryptoForge Lab",
+      "category": "WEB3",
+      "status": "Application in development",
+      "description": "A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics.",
+      "scope": "Wallet submissions depend on an explicit write configuration. This is a software project, not a claim of investment performance.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "viem"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "headline": "Create a token concept. Prepare a launch.",
+      "appUrl": "https://cryptoforgelab.com",
+      "appAccess": "public"
+    },
+    {
+      "id": "bulls-2028",
+      "title": "BullsOf2028",
+      "category": "MARKET DATA",
+      "status": "Local V1",
+      "description": "A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages.",
+      "scope": "Production activation remains gated. Rankings are algorithmic, not investment recommendations.",
+      "tags": [
+        "Next.js",
+        "Cloudflare D1",
+        "TypeScript"
+      ],
+      "repository": null,
+      "source": "Private repository",
+      "headline": "Explore ranked assets and their history.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "unified-swap",
+      "title": "Unified Crypto Swap",
+      "category": "WEB3",
+      "status": "Read-only prototype",
+      "description": "A purchase planner that compares potential funding sources and estimated costs using a demo portfolio or a bounded public-address scan.",
+      "scope": "Live scanning is bounded to canonical USDC on Base and Arbitrum. No wallet signing or transaction execution is implemented.",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Cloudflare Workers"
+      ],
+      "repository": null,
+      "source": "Private repository",
+      "headline": "Compare ways to fund a token purchase.",
+      "appUrl": "https://unified-crypto-swap.sunilkumar-kalabandi.chatgpt.site",
+      "appAccess": "private"
+    },
+    {
+      "id": "unified-wallet",
+      "title": "Unified Wallet",
+      "category": "BROWSER EXTENSION",
+      "status": "Private local build",
+      "description": "An Ethereum/EVM browser wallet with encrypted recovery, account management, asset discovery, token transfers, dapp approvals, and reviewed swaps.",
+      "scope": "Local installation only. Independent security assessment is outstanding; it is not a publicly released wallet.",
+      "tags": [
+        "Browser extension",
+        "Ethereum",
+        "EVM"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "headline": "Manage accounts and review transactions.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "camera-copilot",
+      "title": "AI Camera Copilot",
+      "category": "COMPUTER VISION",
+      "status": "Recorded-video prototype",
+      "description": "A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports.",
+      "scope": "Recorded-video phases 0\u20132 are documented as complete; live HDMI capture remains deferred.",
+      "tags": [
+        "Python",
+        "Computer vision",
+        "Local processing"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "featured": true,
+      "headline": "Turn footage into framing guidance.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "room-comfort",
+      "title": "Room Comfort Autopilot",
+      "category": "SENSOR SYSTEMS",
+      "status": "Local prototypes",
+      "description": "Two related implementations that turn replayable room-sensor data into quality-aware comfort labels, short forecasts, and explainable recommendations.",
+      "scope": "Observation and mock actuation only. It is not a certified safety or building-control system.",
+      "tags": [
+        "Python",
+        "Sensor data",
+        "Explainable rules"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "headline": "Replay sensor data. Explain room comfort.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "worship-director",
+      "title": "AI Worship Production Director",
+      "category": "MEDIA PRODUCTION",
+      "status": "Local prototype",
+      "description": "An offline production assistant that observes recordings or exported OBS events and suggests camera or production choices with confidence and reasons.",
+      "scope": "Suggestions are reviewed by an operator. It does not switch scenes or control hardware.",
+      "tags": [
+        "Python",
+        "OpenCV",
+        "OBS replay"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "headline": "Review a rehearsal. Choose the next shot.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "stream-sentinel",
+      "title": "Live-Stream Failure Sentinel",
+      "category": "OBSERVABILITY",
+      "status": "Offline prototype",
+      "description": "An early-warning assistant that replays stream telemetry, groups likely failures, and creates incident timelines and redacted evidence for operators.",
+      "scope": "Includes offline replay and read-only probes. Continuous live monitoring remains disabled.",
+      "tags": [
+        "Python",
+        "Telemetry",
+        "Incident analysis"
+      ],
+      "repository": null,
+      "source": "Source not published",
+      "headline": "Find stream failures before they pile up.",
+      "appUrl": null,
+      "appAccess": null
+    },
+    {
+      "id": "account-ledger",
+      "title": "Account Ledger Core",
+      "category": "SYSTEMS & MODELLING",
+      "status": "Reference implementation",
+      "description": "A Java ledger with immutable journals, replayable account projections, authorization handling, daily close, and value-date versus knowledge-date queries.",
+      "scope": "An in-memory exercise; persistence, concurrency, and automatic hold expiry are outside its implemented scope.",
+      "tags": [
+        "Java 21",
+        "Event modelling",
+        "Ledger design"
+      ],
+      "repository": "https://github.com/sunilnjc/in-memory-account-ledger",
+      "source": "Public repository",
+      "featured": true,
+      "headline": "Replay events. Rebuild the balance.",
+      "appUrl": null,
+      "appAccess": null
+    }
   ],
   "engineering": [
-    {"id":"load-balancer","title":"Load Balancer","description":"A TypeScript implementation of request distribution across backend servers, including round-robin routing.","repository":"https://github.com/sunilnjc/Load-Balancer"},
-    {"id":"redis-memcached","title":"Redis & Memcached","description":"A study of Redis and Memcached operations and performance comparisons.","repository":"https://github.com/sunilnjc/Redis-Memcached"},
-    {"id":"websocket-longpolling","title":"WebSockets & Long Polling","description":"A TypeScript communication-patterns project with a browser client.","repository":"https://github.com/sunilnjc/Websockets-Longpolling"},
-    {"id":"ecommerce-orders","title":"E-commerce Order Service","description":"A Java/Spring Boot order CRUD service with PostgreSQL, adapted from an existing Kotlin exercise.","repository":"https://github.com/sunilnjc/order-ecommerce"},
-    {"id":"log-my-ticket","title":"Log My Ticket","description":"A MEAN-stack application for logging tasks and incidents.","repository":"https://github.com/sunilnjc/log-my-ticket"},
-    {"id":"retail-discounts","title":"Retail Store Discounts","description":"A retail discount API that applies customer-type rules, bill discounts, and grocery exclusions.","repository":"https://github.com/sunilnjc/RetailStoreDiscouns"},
-    {"id":"react-currency","title":"React Currency","description":"An earlier React application. See the repository for source and setup.","repository":"https://github.com/sunilnjc/React-currency"},
-    {"id":"keyword-tool","title":"Keyword Management Tool","description":"An earlier Gradle-based application. See the repository for implementation details.","repository":"https://github.com/sunilnjc/KeywordManagementTool"},
-    {"id":"completable-future","title":"CompletableFuture Study","description":"A Java concurrency proof of concept inspired by Java Techie.","repository":"https://github.com/sunilnjc/completable-future-poc"},
-    {"id":"redis-challenge","title":"Build Your Own Redis","description":"Work on the CodeCrafters Redis challenge in Python. A learning project rather than a production Redis replacement.","repository":"https://github.com/sunilnjc/redis"},
-    {"id":"rate-limiter","title":"Rate Limiter Lab","description":"A Node.js learning scaffold with a fixed-window limiter, middleware, stress tooling, and additional algorithms left as exercises.","repository":null}
+    {
+      "id": "load-balancer",
+      "title": "Load Balancer",
+      "description": "A TypeScript implementation of request distribution across backend servers, including round-robin routing.",
+      "repository": "https://github.com/sunilnjc/Load-Balancer"
+    },
+    {
+      "id": "redis-memcached",
+      "title": "Redis & Memcached",
+      "description": "A study of Redis and Memcached operations and performance comparisons.",
+      "repository": "https://github.com/sunilnjc/Redis-Memcached"
+    },
+    {
+      "id": "websocket-longpolling",
+      "title": "WebSockets & Long Polling",
+      "description": "A TypeScript communication-patterns project with a browser client.",
+      "repository": "https://github.com/sunilnjc/Websockets-Longpolling"
+    },
+    {
+      "id": "ecommerce-orders",
+      "title": "E-commerce Order Service",
+      "description": "A Java/Spring Boot order CRUD service with PostgreSQL, adapted from an existing Kotlin exercise.",
+      "repository": "https://github.com/sunilnjc/order-ecommerce"
+    },
+    {
+      "id": "log-my-ticket",
+      "title": "Log My Ticket",
+      "description": "A MEAN-stack application for logging tasks and incidents.",
+      "repository": "https://github.com/sunilnjc/log-my-ticket"
+    },
+    {
+      "id": "retail-discounts",
+      "title": "Retail Store Discounts",
+      "description": "A retail discount API that applies customer-type rules, bill discounts, and grocery exclusions.",
+      "repository": "https://github.com/sunilnjc/RetailStoreDiscouns"
+    },
+    {
+      "id": "react-currency",
+      "title": "React Currency",
+      "description": "An earlier React application. See the repository for source and setup.",
+      "repository": "https://github.com/sunilnjc/React-currency"
+    },
+    {
+      "id": "keyword-tool",
+      "title": "Keyword Management Tool",
+      "description": "An earlier Gradle-based application. See the repository for implementation details.",
+      "repository": "https://github.com/sunilnjc/KeywordManagementTool"
+    },
+    {
+      "id": "completable-future",
+      "title": "CompletableFuture Study",
+      "description": "A Java concurrency proof of concept inspired by Java Techie.",
+      "repository": "https://github.com/sunilnjc/completable-future-poc"
+    },
+    {
+      "id": "redis-challenge",
+      "title": "Build Your Own Redis",
+      "description": "Work on the CodeCrafters Redis challenge in Python. A learning project rather than a production Redis replacement.",
+      "repository": "https://github.com/sunilnjc/redis"
+    },
+    {
+      "id": "rate-limiter",
+      "title": "Rate Limiter Lab",
+      "description": "A Node.js learning scaffold with a fixed-window limiter, middleware, stress tooling, and additional algorithms left as exercises.",
+      "repository": null
+    }
   ]
 }

@@ -4,7 +4,7 @@ A responsive personal website collecting my applications, prototypes, engineerin
 
 [GitHub profile](https://github.com/sunilnjc) · [Project collection](docs/PROJECTS.md)
 
-The site includes 15 applications and prototypes, 11 engineering projects and studies, two featured project deep-dives, and expandable notebook entries. It covers AI assistants, learning tools, product development, finance and analytics, browser wallets, computer vision, and media production.
+The compact gallery includes 15 applications and prototypes with direct app and GitHub actions. Longer descriptions open in a detail panel; 11 engineering projects, build notes, and milestones are collapsed below the gallery. It covers AI assistants, learning tools, product development, finance and analytics, browser wallets, computer vision, and media production.
 
 ## Run locally
 

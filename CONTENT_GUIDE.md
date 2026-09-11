@@ -1,6 +1,6 @@
 # Updating the portfolio
 
-Edit `app/project-catalog.json` for the full project collection. Each application has a title, description, stage, scope note, tags, source visibility, and an optional verified public repository URL. Featured entries also have longer editorial descriptions in `app/content.ts`.
+Edit `app/project-catalog.json` for the full project collection. Each application has a title, description, stage, scope note, tags, source visibility, and an optional verified public repository URL. The `headline` is the short gallery summary. `appUrl` and `appAccess` control the app button; use `public` only after verifying public access. Full descriptions and scope notes appear in detail panels.
 
 Edit `app/content.ts` for the short biography, profile links, milestones, and discoveries. Add only accurate details and real links. The current bio describes the observed project collection without claiming a job title or credentials.
 
