@@ -1,18 +1,15 @@
-# Updating your website
+# Updating the portfolio
 
-The website content lives in `app/content.ts`. Change that file, then ask Codex to preview and publish the update.
+Edit `app/project-catalog.json` for the full project collection. Each application has a title, description, stage, scope note, tags, source visibility, and an optional verified public repository URL. Featured entries also have longer editorial descriptions in `app/content.ts`.
 
-- `profile`: display name, introductory sentence, biography, and public contact/profile links. The current introduction is draft copy; no profession or credentials have been assumed.
-- `projects`: project cards, tags, implementation details, and honest scope notes.
-- `milestones`: achievements with context and a link to the related project. Current entries describe documented project milestones rather than personal awards.
-- `discoveries`: expandable notebook entries. The first two are editorial summaries derived from the two project READMEs, not claimed original research.
+Edit `app/content.ts` for the short biography, profile links, milestones, and discoveries. Add only accurate details and real links. The current bio describes the observed project collection without claiming a job title or credentials.
 
-To add a profile link, place `{ label: 'LinkedIn', url: 'YOUR_REAL_HTTPS_PROFILE_URL' }` in `profile.links`. Use actual URLs; do not publish example URLs. When the list is empty the website shows a clear coming-soon state.
+Run `node scripts/generate-profile.mjs` after catalogue updates. This refreshes the Markdown collection and the GitHub profile README draft. Website changes need a successful build and a new deployment; profile changes must also be committed to the `sunilnjc/sunilnjc` repository.
 
-Current project summaries are based on `../ai-camera-copilot/README.md` and `../in-memory-account-ledger/README.md`. Those repositories, code, input files, outputs, and personal footage are not included in this website. Review the summaries before making the site publicly accessible.
+There is no browser-based editor in this version. You can ask Codex to update and publish content, or edit the structured files yourself.
 
-Add entries by following the structure of existing items. Keep IDs unique and update related `#anchor` links. No browser-based editor or database is included in this first version. Content updates need redeployment to appear for all visitors.
+Current entries are based on local project documentation and the corresponding GitHub repositories. Public cards expose high-level product descriptions only. Keep private code, customer information, financial records, wallet material, recordings, and credentials out of this repository.
 
-Development: `npm run dev`. Production validation: `npm run build`.
+Related Room Comfort implementations are grouped under one application. The archive distinguishes earlier exercises and adaptations from original product applications. Empty or documentation-only repositories and third-party course forks are excluded.
 
-The custom domain has been deferred. This first hosted version is private unless its access is explicitly changed. Before adding a link to a public profile, confirm public visitor access and add your preferred contact links.
+The custom domain remains deferred. The GitHub profile is public, while the hosted Sites copy currently remains owner-only. Do not label a private preview as a publicly accessible demo.

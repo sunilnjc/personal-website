@@ -1,9 +1,13 @@
+import catalog from './project-catalog.json';
+export const applications = catalog.applications;
+export const engineering = catalog.engineering;
+
 /** Edit this file to update the portfolio. See CONTENT_GUIDE.md. */
 export const profile = {
   name: 'Sunil',
   intro: 'A place for my work, ideas, and everything I discover along the way.',
-  bio: 'This is my personal collection of projects and notes. From an idea to a working prototype, I’m keeping a record of the process here.',
-  links: [] as { label: string; url: string }[],
+  bio: 'I build applications across AI, learning, finance, and media production, and explore the systems underneath them. This is a collection of working apps, local prototypes, and engineering experiments.',
+  links: [{ label: 'GitHub · sunilnjc', url: 'https://github.com/sunilnjc' }] as { label: string; url: string }[],
 };
 export const projects = [
   { id: 'camera-copilot', number: '01', title: 'AI Camera Copilot', category: 'COMPUTER VISION', status: 'Recorded-video prototype',

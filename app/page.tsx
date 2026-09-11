@@ -3,7 +3,7 @@
 import { ArrowUpRight, ArrowDown, ArrowUp, Code2, ScanLine, NotebookPen, Sparkles } from 'lucide-react';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Empty, EmptyHeader, EmptyTitle, EmptyDescription } from '@/components/ui/empty';
-import { profile, projects, milestones, discoveries } from './content';
+import { profile, projects, milestones, discoveries, applications, engineering } from './content';
 
 export default function Home() {
   return <>
@@ -33,9 +33,16 @@ export default function Home() {
         <div className="project-grid">{projects.map((p,i)=><article className="project-card" key={p.id} id={p.id}>
           <div className={`project-cover cover-${i}`}><div className="cover-top"><span>{p.category}</span>{i===0?<ScanLine size={25}/>:<Code2 size={25}/>}</div><div className="cover-title">{i===0?<>See.<br/>Understand.<br/><em>Guide.</em></>:<>Every event.<br/>Every entry.<br/><em>A clear trail.</em></>}</div><div className="cover-foot"><span>{p.facts[0]}</span><span>PROJECT / {p.number}</span></div></div>
           <div className="project-body"><span className="status"><span/>{p.status}</span><h3>{p.title}</h3><p>{p.description}</p><div className="tags">{p.tags.map(t=><span key={t}>{t}</span>)}</div>
+          <div className="project-source">{applications.find(a => a.id === p.id)?.repository ? <a className="text-link" href={applications.find(a => a.id === p.id)!.repository!} target="_blank" rel="noopener noreferrer">View on GitHub <ArrowUpRight size={16}/></a> : <span>Local project · source not published</span>}</div>
           <Accordion><AccordionItem value={p.id}><AccordionTrigger className="project-trigger">Project details</AccordionTrigger><AccordionContent className="detail-copy"><p>{p.detail}</p><p className="limitation">{p.limitation}</p></AccordionContent></AccordionItem></Accordion>
           </div>
         </article>)}</div>
+        <div className="catalog-heading"><h3>The wider collection</h3><span>{applications.length} applications & prototypes</span></div>
+        <div className="app-catalog">{applications.filter(a => !a.featured).map(a => <article className="catalog-card" id={a.id} key={a.id}>
+          <p className="eyebrow">{a.category}</p><h3>{a.title}</h3><span className="status">{a.status}</span><p className="catalog-description">{a.description}</p><p className="catalog-scope">{a.scope}</p><div className="tags">{a.tags.map(t => <span key={t}>{t}</span>)}</div>
+          <div className="catalog-source">{a.repository ? <a className="text-link" href={a.repository} target="_blank" rel="noopener noreferrer">View on GitHub <ArrowUpRight size={16}/></a> : <span>{a.source}</span>}</div>
+        </article>)}</div>
+        <Accordion className="engineering-archive"><AccordionItem value="engineering"><AccordionTrigger className="archive-trigger"><span>Earlier engineering work <span className="archive-count">{engineering.length} projects & studies</span></span></AccordionTrigger><AccordionContent><div className="engineering-grid">{engineering.map(e => <article key={e.id}><h3>{e.title}</h3><p>{e.description}</p>{e.repository ? <a className="text-link" href={e.repository} target="_blank" rel="noopener noreferrer">View repository <ArrowUpRight size={15}/></a> : <span className="catalog-source">Local learning project</span>}</article>)}</div></AccordionContent></AccordionItem></Accordion>
       </section>
       <section className="milestone-section" id="achievements" aria-labelledby="milestones-heading"><div className="wrap milestone-layout"><div><p className="eyebrow">02 / ACHIEVEMENTS</p><h2 id="milestones-heading">Small steps.<br/><span className="serif">Real progress.</span></h2><p className="muted">Selected milestones from the projects.<br/>More to come as the work grows.</p></div><div className="milestone-list">{milestones.map((m,i)=><article key={m.title}><div className="milestone-number">0{i+1}</div><div><span className="eyebrow">{m.label}</span><h3>{m.title}</h3><p>{m.detail}</p><a className="text-link" href={m.project}>Explore the project <ArrowUpRight size={16}/></a></div></article>)}</div></div></section>
       <section className="section wrap" id="discoveries" aria-labelledby="discoveries-heading"><div className="section-heading"><div><p className="eyebrow">03 / THE NOTEBOOK</p><h2 id="discoveries-heading">Worth a closer look<span className="blue">.</span></h2></div><NotebookPen className="notebook-icon" size={32}/></div><p className="section-intro">Observations from building, testing, and figuring things out.</p>
