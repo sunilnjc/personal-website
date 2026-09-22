@@ -7,7 +7,7 @@ import { profile, applications, engineering } from './content';
 import {caseStudies} from './case-studies';
 
 const icons = [BriefcaseBusiness, BookOpen, FlaskConical, Wallet, ChartNoAxesCombined, Mic, Orbit, ChartNoAxesCombined, Orbit, Wallet, ScanLine, Thermometer, Clapperboard, Radio, Layers];
-const liveFirst = applications.filter(a => !['ritestack','job-search-agent','bulls-2028','camera-copilot','worship-director'].includes(a.id)).sort((a,b) => Number(b.appAccess === 'public') - Number(a.appAccess === 'public'));
+const liveFirst = applications.filter(a => !['ritestack','job-search-agent','bulls-2028','budget-tracker','whisper-journal','camera-copilot','worship-director'].includes(a.id)).sort((a,b) => Number(b.appAccess === 'public') - Number(a.appAccess === 'public'));
 type Application = (typeof applications)[number];
 
 function ProjectLinks({app}: {app: Application}) {
