@@ -46,6 +46,6 @@ export default function Home() {
       </Accordion></section>
       <section className="resume-section" id="resume"><div><p className="eyebrow">CONTINUE THE CONVERSATION</p><h2>Experience, in focus.</h2><p>Choose the resume relevant to your team.</p></div><div className="resume-actions"><a className="action" href="/resumes/Sunilkumar_Kalabandi_SSE.pdf" download>Senior Software Engineer · PDF ↓</a><a className="action" href="/resumes/Sunilkumar_kalabandi_FDE.pdf" download>Forward Deployed Engineer · PDF ↓</a></div></section>
     </main>
-    <footer className="wrap"><span>© {new Date().getFullYear()} {profile.name}</span><a href="https://github.com/sunilnjc" target="_blank" rel="noopener noreferrer">Find me on GitHub <ArrowUpRight size={14}/></a><a href="#top" aria-label="Back to top"><ArrowUp size={17}/></a></footer>
+    <footer className="wrap"><span>© {new Date().getFullYear()} {profile.name} · <a href="https://viewmywork.dev">viewmywork.dev</a></span><a href="https://github.com/sunilnjc" target="_blank" rel="noopener noreferrer">Find me on GitHub <ArrowUpRight size={14}/></a><a href="#top" aria-label="Back to top"><ArrowUp size={17}/></a></footer>
   </>;
 }
