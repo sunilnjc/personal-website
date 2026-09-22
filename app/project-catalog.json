@@ -1,10 +1,29 @@
 {
   "applications": [
     {
+      "id": "ritestack",
+      "title": "RiteStack",
+      "category": "PRODUCTIVITY",
+      "status": "Live application",
+      "description": "A subscription decision workspace for reviewing AI and developer tools, tracking renewal dates and spending, and choosing what to keep, cut or pause.",
+      "scope": "Next.js application on Cloudflare Workers with Supabase authentication and per-user row-level security. Payment entitlement is granted through verified Paddle webhooks; tool cancellation remains manual.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Cloudflare"
+      ],
+      "repository": "https://github.com/sunilnjc/genesis",
+      "source": "Public repository",
+      "headline": "Review your tools before they renew.",
+      "appUrl": "https://ritestack.app",
+      "appAccess": "public"
+    },
+    {
       "id": "job-search-agent",
-      "title": "Job Search Agent",
+      "title": "The Job Pursuit",
       "category": "AI & PRODUCTIVITY",
-      "status": "Working application",
+      "status": "Live beta",
       "description": "A job-search assistant that collects employer listings, ranks eligible roles, prepares tailored application material, and tracks the application pipeline.",
       "scope": "Submission assistance pauses for candidate confirmation and unsupported or ambiguous steps.",
       "tags": [
@@ -15,14 +34,14 @@
       "repository": "https://github.com/sunilnjc/job-search-agent",
       "source": "Public repository",
       "headline": "Find roles. Prepare applications.",
-      "appUrl": null,
-      "appAccess": null
+      "appUrl": "https://thejobpursuit.com",
+      "appAccess": "public"
     },
     {
       "id": "lucid",
       "title": "Lucid Vocabulary Coach",
       "category": "LEARNING",
-      "status": "Working application",
+      "status": "Live application",
       "description": "A mobile-first English-learning app with focused vocabulary lessons, usage exercises, spaced review, and regular quizzes.",
       "scope": "Progress is stored in D1 with device caching for offline continuity.",
       "tags": [
@@ -34,24 +53,6 @@
       "source": "Public repository",
       "headline": "Learn words. Put them to use.",
       "appUrl": "https://lucid-vocabulary-sunil.sunilkumar-kalabandi.chatgpt.site",
-      "appAccess": "public"
-    },
-    {
-      "id": "product-studio",
-      "title": "UAE F&B Product Studio",
-      "category": "PRODUCT DEVELOPMENT",
-      "status": "Local application",
-      "description": "A guided workspace that takes a beverage brief through concept comparison, prototype formulation, costing, packaging, sourcing, branding, and exportable product dossiers.",
-      "scope": "The public app is an earlier hosted version. The local application includes further formulation, costing, sourcing, and dossier work.",
-      "tags": [
-        "TypeScript",
-        "MongoDB",
-        "AI workflows"
-      ],
-      "repository": null,
-      "source": "Private repository",
-      "headline": "Turn a product brief into a prototype.",
-      "appUrl": "https://uae-fnb-product-studio.sunilkumar-kalabandi.chatgpt.site",
       "appAccess": "public"
     },
     {
@@ -68,7 +69,7 @@
       ],
       "repository": "https://github.com/sunilnjc/debt-tracker",
       "source": "Public repository",
-      "headline": "See where the month\u2019s money goes.",
+      "headline": "See where the month’s money goes.",
       "appUrl": null,
       "appAccess": null
     },
@@ -78,7 +79,7 @@
       "category": "ANALYTICS",
       "status": "Full-stack MVP",
       "description": "Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights.",
-      "scope": "Includes a deterministic mock mode; live integration needs the application\u2019s configuration.",
+      "scope": "Includes a deterministic mock mode; live integration needs the application’s configuration.",
       "tags": [
         "TypeScript",
         "React",
@@ -112,9 +113,9 @@
       "id": "crypto-forge",
       "title": "CryptoForge Lab",
       "category": "WEB3",
-      "status": "Application in development",
+      "status": "Live founders preview",
       "description": "A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics.",
-      "scope": "Wallet submissions depend on an explicit write configuration. This is a software project, not a claim of investment performance.",
+      "scope": "Deployed and nearing completion; access to the application is restricted to the founders preview. Wallet submissions depend on explicit write configuration.",
       "tags": [
         "Next.js",
         "TypeScript",
@@ -124,15 +125,15 @@
       "source": "Source not published",
       "headline": "Create a token concept. Prepare a launch.",
       "appUrl": "https://cryptoforgelab.com",
-      "appAccess": "public"
+      "appAccess": "private"
     },
     {
       "id": "bulls-2028",
       "title": "BullsOf2028",
       "category": "MARKET DATA",
-      "status": "Local V1",
+      "status": "Live application",
       "description": "A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages.",
-      "scope": "Production activation remains gated. Rankings are algorithmic, not investment recommendations.",
+      "scope": "Deployed multi-chain market intelligence platform with recorded website traffic. Rankings are deterministic; traffic measurements may include automated requests.",
       "tags": [
         "Next.js",
         "Cloudflare D1",
@@ -141,8 +142,8 @@
       "repository": null,
       "source": "Private repository",
       "headline": "Explore ranked assets and their history.",
-      "appUrl": null,
-      "appAccess": null
+      "appUrl": "https://bullsof2028.com",
+      "appAccess": "public"
     },
     {
       "id": "unified-swap",
@@ -186,7 +187,7 @@
       "category": "COMPUTER VISION",
       "status": "Recorded-video prototype",
       "description": "A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports.",
-      "scope": "Recorded-video phases 0\u20132 are documented as complete; live HDMI capture remains deferred.",
+      "scope": "Recorded-video phases 0–2 are documented as complete; live HDMI capture remains deferred.",
       "tags": [
         "Python",
         "Computer vision",

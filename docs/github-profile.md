@@ -1,6 +1,6 @@
 # Hi, I’m Sunil
 
-I build applications across AI, learning, finance, and media production. I also explore backend systems, event modelling, and the engineering underneath useful products.
+Senior software engineer building banking and payment systems with Java and Spring Boot, alongside independently deployed AI, web and market-data applications. My work spans enterprise integration, distributed systems, authentication, and delivery from requirements to production.
 
 [Explore the portfolio source](https://github.com/sunilnjc/personal-website)
 
@@ -8,23 +8,23 @@ I build applications across AI, learning, finance, and media production. I also 
 
 15 projects, with their current scope made explicit. Some are working applications; others are local prototypes. Private-source projects are described here without exposing their code or data.
 
-| Project | What it does | Stage |
-| --- | --- | --- |
-| [Job Search Agent](https://github.com/sunilnjc/job-search-agent) | A job-search assistant that collects employer listings, ranks eligible roles, prepares tailored application material, and tracks the application pipeline. | Working application |
-| [Lucid Vocabulary Coach](https://github.com/sunilnjc/Lucid) | A mobile-first English-learning app with focused vocabulary lessons, usage exercises, spaced review, and regular quizzes. | Working application |
-| UAE F&B Product Studio | A guided workspace that takes a beverage brief through concept comparison, prototype formulation, costing, packaging, sourcing, branding, and exportable product dossiers. | Local application; private repository |
-| [BudgetTracker](https://github.com/sunilnjc/debt-tracker) | A budgeting and cash-flow application with expense tracking, payoff scenarios, savings forecasts, and data export. | Working locally |
-| [Trader Risk Cockpit](https://github.com/sunilnjc/trader-cockpit) | Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights. | Full-stack MVP |
-| [Whisper](https://github.com/sunilnjc/Whisper) | A voice-journaling pipeline: receive a Telegram prompt, reply with a voice note, transcribe it locally, and keep the text in SQLite. | Capture prototype |
-| CryptoForge Lab | A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics. | Application in development; source not published |
-| BullsOf2028 | A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages. | Local V1; private repository |
-| Unified Crypto Swap | A purchase planner that compares potential funding sources and estimated costs using a demo portfolio or a bounded public-address scan. | Read-only prototype; private repository |
-| Unified Wallet | An Ethereum/EVM browser wallet with encrypted recovery, account management, asset discovery, token transfers, dapp approvals, and reviewed swaps. | Private local build; source not published |
-| AI Camera Copilot | A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports. | Recorded-video prototype; source not published |
-| Room Comfort Autopilot | Two related implementations that turn replayable room-sensor data into quality-aware comfort labels, short forecasts, and explainable recommendations. | Local prototypes; source not published |
-| AI Worship Production Director | An offline production assistant that observes recordings or exported OBS events and suggests camera or production choices with confidence and reasons. | Local prototype; source not published |
-| Live-Stream Failure Sentinel | An early-warning assistant that replays stream telemetry, groups likely failures, and creates incident timelines and redacted evidence for operators. | Offline prototype; source not published |
-| [Account Ledger Core](https://github.com/sunilnjc/in-memory-account-ledger) | A Java ledger with immutable journals, replayable account projections, authorization handling, daily close, and value-date versus knowledge-date queries. | Reference implementation |
+| Project | What it does | Stage | App |
+| --- | --- | --- | --- |
+| [RiteStack](https://github.com/sunilnjc/genesis) | A subscription decision workspace for reviewing AI and developer tools, tracking renewal dates and spending, and choosing what to keep, cut or pause. | Live application | [Open app](https://ritestack.app) |
+| [The Job Pursuit](https://github.com/sunilnjc/job-search-agent) | A job-search assistant that collects employer listings, ranks eligible roles, prepares tailored application material, and tracks the application pipeline. | Live beta | [Open app](https://thejobpursuit.com) |
+| [Lucid Vocabulary Coach](https://github.com/sunilnjc/Lucid) | A mobile-first English-learning app with focused vocabulary lessons, usage exercises, spaced review, and regular quizzes. | Live application | [Open app](https://lucid-vocabulary-sunil.sunilkumar-kalabandi.chatgpt.site) |
+| [BudgetTracker](https://github.com/sunilnjc/debt-tracker) | A budgeting and cash-flow application with expense tracking, payoff scenarios, savings forecasts, and data export. | Working locally | Local / source only |
+| [Trader Risk Cockpit](https://github.com/sunilnjc/trader-cockpit) | Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights. | Full-stack MVP | [Restricted preview](https://trader-risk-cockpit.sunilkumar-kalabandi.chatgpt.site) |
+| [Whisper](https://github.com/sunilnjc/Whisper) | A voice-journaling pipeline: receive a Telegram prompt, reply with a voice note, transcribe it locally, and keep the text in SQLite. | Capture prototype | Local / source only |
+| CryptoForge Lab | A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics. | Live founders preview; source not published | [Restricted preview](https://cryptoforgelab.com) |
+| BullsOf2028 | A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages. | Live application; private repository | [Open app](https://bullsof2028.com) |
+| Unified Crypto Swap | A purchase planner that compares potential funding sources and estimated costs using a demo portfolio or a bounded public-address scan. | Read-only prototype; private repository | [Restricted preview](https://unified-crypto-swap.sunilkumar-kalabandi.chatgpt.site) |
+| Unified Wallet | An Ethereum/EVM browser wallet with encrypted recovery, account management, asset discovery, token transfers, dapp approvals, and reviewed swaps. | Private local build; source not published | Local / source only |
+| AI Camera Copilot | A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports. | Recorded-video prototype; source not published | Local / source only |
+| Room Comfort Autopilot | Two related implementations that turn replayable room-sensor data into quality-aware comfort labels, short forecasts, and explainable recommendations. | Local prototypes; source not published | Local / source only |
+| AI Worship Production Director | An offline production assistant that observes recordings or exported OBS events and suggests camera or production choices with confidence and reasons. | Local prototype; source not published | Local / source only |
+| Live-Stream Failure Sentinel | An early-warning assistant that replays stream telemetry, groups likely failures, and creates incident timelines and redacted evidence for operators. | Offline prototype; source not published | Local / source only |
+| [Account Ledger Core](https://github.com/sunilnjc/in-memory-account-ledger) | A Java ledger with immutable journals, replayable account projections, authorization handling, daily close, and value-date versus knowledge-date queries. | Reference implementation | Local / source only |
 
 ## Engineering explorations
 
