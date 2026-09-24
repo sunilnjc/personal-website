@@ -6,7 +6,7 @@ A responsive personal website collecting my applications, prototypes, engineerin
 
 [GitHub profile](https://github.com/sunilnjc) · [Project collection](docs/PROJECTS.md)
 
-The compact gallery includes 15 applications and prototypes with direct app and GitHub actions. Longer descriptions open in a detail panel; 11 engineering projects, build notes, and milestones are collapsed below the gallery. It covers AI assistants, learning tools, product development, finance and analytics, browser wallets, computer vision, and media production.
+The compact gallery includes 16 applications and prototypes with direct app and GitHub actions. Longer descriptions open in a detail panel; 11 engineering projects, build notes, and milestones are collapsed below the gallery. It covers AI assistants, learning tools, product development, finance and analytics, browser wallets, computer vision, and media production.
 
 ## Run locally
 
@@ -41,4 +41,4 @@ This repository contains the portfolio, not a combined copy of every application
 
 Course forks, empty repositories, duplicate placeholders, and notes without an implemented application are not presented as finished products. Earlier learning exercises are labeled separately and retain their attribution.
 
-The hosted Sites copy currently has owner-only access. This GitHub repository and the GitHub profile showcase are public; a public custom-domain website is a separate launch step.
+The portfolio is public at https://viewmywork.dev. Linked projects have their own access settings; private betas and public previews are labeled separately.

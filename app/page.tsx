@@ -12,7 +12,7 @@ type Application = (typeof applications)[number];
 
 function ProjectLinks({app}: {app: Application}) {
   return <>
-    {app.appUrl && <a className={`action ${app.appAccess === 'public' ? 'action-primary' : 'action-private'}`} href={app.appUrl} target="_blank" rel="noopener noreferrer">{app.appAccess === 'public' ? <>Open app <ArrowUpRight size={15}/></> : <><LockKeyhole size={13}/> Private preview</>}</a>}
+    {app.appUrl && <a className={`action ${app.appAccess === 'public' ? 'action-primary' : 'action-private'}`} href={app.appUrl} target="_blank" rel="noopener noreferrer">{app.appAccess === 'public' ? <>{app.appLinkLabel ?? 'Open app'} <ArrowUpRight size={15}/></> : <><LockKeyhole size={13}/> {app.appLinkLabel ?? 'Private preview'}</>}</a>}
     {app.repository && <a className="action action-source" href={app.repository} target="_blank" rel="noopener noreferrer"><Code2 size={15}/> GitHub</a>}
   </>;
 }
@@ -29,9 +29,9 @@ export default function Home() {
       <section aria-label="Additional applications" className="gallery">
         {liveFirst.map(a => {
           const index = applications.findIndex(x=>x.id === a.id);
-          const Icon = icons[index] ?? Code2;
+          const Icon = a.id === 'dust-sweep' ? Wallet : a.id === 'crypto-forge' ? Orbit : icons[index] ?? Code2;
           return <article className={`project-card ${a.appAccess === 'public' ? 'has-live-app' : ''}`} key={a.id} id={a.id}>
-            <div className="card-top"><span className={`app-icon tone-${index%5}`}><Icon size={23} strokeWidth={1.8}/></span><span className={`card-status ${a.appAccess === 'public' ? 'live' : ''}`}>{a.appAccess === 'public' ? <><span/>Live app</> : a.appAccess === 'private' ? 'Private preview' : a.repository ? 'On GitHub' : 'Local build'}</span></div>
+            <div className="card-top"><span className={`app-icon tone-${index%5}`}><Icon size={23} strokeWidth={1.8}/></span><span className={`card-status ${a.appAccess === 'public' ? 'live' : ''}`}>{a.appAccess === 'public' ? <><span/>{a.cardBadge ?? 'Live app'}</> : a.appAccess === 'private' ? (a.cardBadge ?? 'Private preview') : a.repository ? 'On GitHub' : 'Local build'}</span></div>
             <h2>{a.title}</h2><p className="card-summary">{a.headline}</p>
             <div className="card-actions"><ProjectLinks app={a}/>
               <Sheet><SheetTrigger className="details-button" aria-label={`Details about ${a.title}`}>Details</SheetTrigger><SheetContent className="project-panel"><SheetHeader><p className="eyebrow">{a.category}</p><SheetTitle>{a.title}</SheetTitle><SheetDescription>{a.description}</SheetDescription></SheetHeader><div className="panel-body"><span className="stage">{a.status}</span><h3>Current scope</h3><p>{a.scope}</p><div className="tags">{a.tags.map(t=><span key={t}>{t}</span>)}</div><div className="panel-links"><ProjectLinks app={a}/></div>{!a.repository && <p className="source-note">{a.source}.</p>}{a.appAccess === 'private' && <p className="source-note">Preview access is restricted. Sign in with an account that has access.</p>}</div></SheetContent></Sheet>

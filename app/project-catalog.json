@@ -69,7 +69,7 @@
       ],
       "repository": "https://github.com/sunilnjc/debt-tracker",
       "source": "Public repository",
-      "headline": "See where the month’s money goes.",
+      "headline": "See where the month\u2019s money goes.",
       "appUrl": null,
       "appAccess": null
     },
@@ -79,7 +79,7 @@
       "category": "ANALYTICS",
       "status": "Full-stack MVP",
       "description": "Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights.",
-      "scope": "Includes a deterministic mock mode; live integration needs the application’s configuration.",
+      "scope": "Includes a deterministic mock mode; live integration needs the application\u2019s configuration.",
       "tags": [
         "TypeScript",
         "React",
@@ -113,19 +113,47 @@
       "id": "crypto-forge",
       "title": "CryptoForge Lab",
       "category": "WEB3",
-      "status": "Live founders preview",
-      "description": "A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics.",
-      "scope": "Deployed and nearing completion; access to the application is restricted to the founders preview. Wallet submissions depend on explicit write configuration.",
+      "status": "Deployed \u00b7 Private beta",
+      "description": "Generate meme concepts, branding, artwork and social content; save private projects through wallet-based accounts; explore PONS tokens and prepare wallet-approved launches on Robinhood Chain and Solana.",
+      "scope": "Private beta behind authorized login. Mainnet gates are enabled, but controlled real-wallet launch and recovery acceptance remain outstanding. Solana RPC reliability and analytics coverage are still limited. Dust Sweep is a separate deployment.",
       "tags": [
-        "Next.js",
         "TypeScript",
-        "viem"
+        "React",
+        "Cloudflare Workers / D1 / R2",
+        "OpenAI",
+        "viem",
+        "Solana"
       ],
       "repository": null,
-      "source": "Source not published",
-      "headline": "Create a token concept. Prepare a launch.",
-      "appUrl": "https://cryptoforgelab.com",
-      "appAccess": "private"
+      "source": "Private repository",
+      "headline": "Turn meme ideas into wallet-controlled launch projects.",
+      "appUrl": "https://cryptoforgelab.com/",
+      "appAccess": "private",
+      "cardBadge": "Private beta",
+      "appLinkLabel": "Private beta"
+    },
+    {
+      "id": "dust-sweep",
+      "title": "Dust Sweep",
+      "category": "WEB3 \u00b7 WALLET TOOLS",
+      "status": "Live preview \u2014 balances and quotes",
+      "headline": "Find crypto dust. Compare recovery costs.",
+      "description": "Inspect supported token balances, select tokens, request same-chain conversion quotes, and compare expected output, network and approval fees, and minimum recovery. Uneconomical tokens and missing pricing or safety evidence are flagged.",
+      "scope": "Public preview; EVM and Solana transaction execution are disabled. EVM discovery uses an eight-contract watchlist rather than wallet-wide indexing. Base quotes and combined economics were verified; Solana scanning and market pricing had intermittent provider failures at the September 24 check. Only supported same-chain USDC destinations; no automatic bridging. This standalone Worker and D1 deployment shares the private CryptoForge Lab codebase.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Cloudflare Workers / D1",
+        "viem",
+        "Solana",
+        "KyberSwap / Raydium"
+      ],
+      "repository": null,
+      "source": "Private repository",
+      "appUrl": "https://dust-sweep.bullsof2028.workers.dev",
+      "appAccess": "public",
+      "cardBadge": "Live preview",
+      "appLinkLabel": "Open preview"
     },
     {
       "id": "bulls-2028",
@@ -187,7 +215,7 @@
       "category": "COMPUTER VISION",
       "status": "Recorded-video prototype",
       "description": "A local camera assistant for subject tracking, composition checks, and stabilized framing guidance, with annotated video and structured reports.",
-      "scope": "Recorded-video phases 0–2 are documented as complete; live HDMI capture remains deferred.",
+      "scope": "Recorded-video phases 0\u20132 are documented as complete; live HDMI capture remains deferred.",
       "tags": [
         "Python",
         "Computer vision",

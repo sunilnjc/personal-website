@@ -6,7 +6,7 @@ Senior software engineer building banking and payment systems with Java and Spri
 
 ## Applications & prototypes
 
-15 projects, with their current scope made explicit. Some are working applications; others are local prototypes. Private-source projects are described here without exposing their code or data.
+16 projects, with their current scope made explicit. Some are working applications; others are local prototypes. Private-source projects are described here without exposing their code or data.
 
 | Project | What it does | Stage | App |
 | --- | --- | --- | --- |
@@ -16,7 +16,8 @@ Senior software engineer building banking and payment systems with Java and Spri
 | [BudgetTracker](https://github.com/sunilnjc/debt-tracker) | A budgeting and cash-flow application with expense tracking, payoff scenarios, savings forecasts, and data export. | Working locally | Local / source only |
 | [Trader Risk Cockpit](https://github.com/sunilnjc/trader-cockpit) | Read-only trading analytics that turns public Hyperliquid fills and funding history into an auditable ledger and performance, risk, and behavior insights. | Full-stack MVP | [Restricted preview](https://trader-risk-cockpit.sunilkumar-kalabandi.chatgpt.site) |
 | [Whisper](https://github.com/sunilnjc/Whisper) | A voice-journaling pipeline: receive a Telegram prompt, reply with a voice note, transcribe it locally, and keep the text in SQLite. | Capture prototype | Local / source only |
-| CryptoForge Lab | A noncustodial token-creation workspace with AI concept generation, launch discovery, conflict checks, wallet-reviewed launch preparation, and post-launch analytics. | Live founders preview; source not published | [Restricted preview](https://cryptoforgelab.com) |
+| CryptoForge Lab | Generate meme concepts, branding, artwork and social content; save private projects through wallet-based accounts; explore PONS tokens and prepare wallet-approved launches on Robinhood Chain and Solana. | Deployed · Private beta; private repository | [Private beta](https://cryptoforgelab.com/) |
+| Dust Sweep | Inspect supported token balances, select tokens, request same-chain conversion quotes, and compare expected output, network and approval fees, and minimum recovery. Uneconomical tokens and missing pricing or safety evidence are flagged. | Live preview — balances and quotes; private repository | [Open preview](https://dust-sweep.bullsof2028.workers.dev) |
 | BullsOf2028 | A multi-chain intelligence platform with deterministic asset eligibility, ranking, ingestion, historical snapshots, and asset and category pages. | Live application; private repository | [Open app](https://bullsof2028.com) |
 | Unified Crypto Swap | A purchase planner that compares potential funding sources and estimated costs using a demo portfolio or a bounded public-address scan. | Read-only prototype; private repository | [Restricted preview](https://unified-crypto-swap.sunilkumar-kalabandi.chatgpt.site) |
 | Unified Wallet | An Ethereum/EVM browser wallet with encrypted recovery, account management, asset discovery, token transfers, dapp approvals, and reviewed swaps. | Private local build; source not published | Local / source only |
